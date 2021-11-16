@@ -6,5 +6,13 @@ import { Component } from "@angular/core";
  templateUrl: "./server.component.html"
 }) 
 export class ServerComponent {
+    serverId : number = 10 ;
+    serverStatus: string = "offLine";
+    allowsNewServer : boolean = false;
 
+    constructor(){
+        setTimeout(() => {
+            this.allowsNewServer = true;
+        }, 2000)
+    }
 }
