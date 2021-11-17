@@ -9,10 +9,15 @@ export class ServerComponent {
     serverId : number = 10 ;
     serverStatus: string = "offLine";
     allowsNewServer : boolean = false;
+    serverCreationStatus : string = "No server was created";
 
     constructor(){
         setTimeout(() => {
             this.allowsNewServer = true;
         }, 2000)
+    }
+
+    onCreateServer(){
+        this.serverCreationStatus = "sever was created";
     }
 }

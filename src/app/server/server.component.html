@@ -1,6 +1,5 @@
 <!--holds templete for component-->
 <!--<p>{{"server"}} with Id {{serverId}} is {{serverStatus}}</p>-->
  
-<button class="btn btn-danger" [disabled] = "!allowsNewServer">Add Server</button>
-    
- 
+<button class="btn btn-danger" [disabled] = "!allowsNewServer" (click) ="onCreateServer()">Add Server</button>
+    <p>{{serverCreationStatus}}</p>
